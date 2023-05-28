@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logincontroller">
+    <TableView fx:id="tableViewCourses" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="colCourseName" text="Course Name" />
+            <TableColumn fx:id="colCapacity" text="Capacity" />
+            <TableColumn fx:id="colYear" text="Year" />
+            <TableColumn fx:id="colDeliveryMode" text="Delivery Mode" />
+            <TableColumn fx:id="colDayOfLecture" text="Day of Lecture" />
+            <TableColumn fx:id="colTimeOfLecture" text="Time of Lecture" />
+            <TableColumn fx:id="colDuration" text="Duration of Lecture (hour)" />
+        </columns>
+    </TableView>
+    <Button onAction="#enrollCourse" text="Enroll" />
+    <Button onAction="#withdrawCourse" text="Withdraw" />
+</VBox>
